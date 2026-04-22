@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>halo , {{ $nama }}</h1>
-    <p>ini halama profie</p>
+    <p>Nama Barang : {{ $nama }}</p>
+    <p>Harga : {{ $harga }}</p>
 </body>
 </html>
