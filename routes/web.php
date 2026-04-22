@@ -13,6 +13,10 @@ Route::get('/profil', function(){
     return view('profil');
 });
 
-Route::get('/user/{nama}', function($nama){
-    return "halo kak ". $nama;
+Route::get('/user/{nama}/{harga}', function($nama, $harga){
+    return "product $nama -  harga  $harga" ;
 });
+
+Route::get('/user/{id}', function($id){
+    return "userid " . $id;
+})->where('id','[0-9]+');
