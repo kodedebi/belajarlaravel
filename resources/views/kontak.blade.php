@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    <h3>Profile</h3>
-    <p>Nama :  {{ $nama }}</p>
+    <h3>Kontak</h3>
+    <p>email : admin@gmail.com</p>
 @endsection
