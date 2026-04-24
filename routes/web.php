@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\BarangController;
-
+use App\Http\Controllers\ProdukController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -42,6 +42,4 @@ Route::get('/kontak' , function(){
     return view('kontak');
 });
 
-Route::get('/produk', function(){
-    return view('produk.index');
-});
+Route::get('/produk',[ProdukController::class, 'index']);

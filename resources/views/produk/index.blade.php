@@ -8,21 +8,15 @@
         <th>#</th>
         <th>Nama</th>
         <th>Produk</th>
-        <th>stok</th>
-        
+        <th>stok</th>        
     </tr>
+    @foreach($produk as $p)
     <tr>
         <td><button class="btn btn-danger btn sm">Hapus</button></td>
-        <td>Laptop</td>
-        <td>5000000</td>
+        <td>{{ $p->nama }}</td>
+        <td>{{ $p->harga }}</td>
         <td>0</td>
     </tr>
-    <tr>
-         <td><button class="btn btn-danger btn sm">Hapus</button></td>
-        <td>Mouse</td>
-        <td>50000</td>
-        <td>0</td>
-    </tr>
-
+   @endforeach
 </table>
 @endsection
